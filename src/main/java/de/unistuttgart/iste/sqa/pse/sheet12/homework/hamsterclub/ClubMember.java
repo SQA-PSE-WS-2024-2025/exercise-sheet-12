@@ -11,10 +11,9 @@ public final class ClubMember implements Comparable<ClubMember> {
 	private double contributions;
 	private boolean hasPaidFees;
 
-	
 	/**
 	 * Constructs of a new club member.
-	 * 
+	 *
 	 * @param name name of the new member. Must not be {@code null}.
 	 * @param age age of the new member. Must be >= 0.
 	 * @param contributions contributions of the new member. Must be >= 0.
@@ -64,16 +63,16 @@ public final class ClubMember implements Comparable<ClubMember> {
 
 	/**
 	 * Get the name of the member.
-	 * 
+	 *
 	 * @return the member's name.
 	 */
-	public  String getName() {
+	public String getName() {
 		return name;
 	}
 
 	/**
 	 * Get the age of the member.
-	 * 
+	 *
 	 * @return the member's age.
 	 */
 	public int getAge() {
@@ -82,7 +81,7 @@ public final class ClubMember implements Comparable<ClubMember> {
 
 	/**
 	 * Get the contributions of the member.
-	 * 
+	 *
 	 * @return the member's contributions.
 	 */
 	public double getContributions() {
@@ -91,7 +90,7 @@ public final class ClubMember implements Comparable<ClubMember> {
 
 	/**
 	 * Update the contributions of the member.
-	 * 
+	 *
 	 * @param contributions, the new contributions, must be >= 0.
 	 */
 	public void setContributions(final double contributions) {
@@ -103,7 +102,7 @@ public final class ClubMember implements Comparable<ClubMember> {
 
 	/**
 	 * Get the payment status of the member.
-	 * 
+	 *
 	 * @return true, if the member paid their contributions, false otherwise.
 	 */
 	public boolean getHasPaidContributions() {
@@ -112,7 +111,7 @@ public final class ClubMember implements Comparable<ClubMember> {
 
 	/**
 	 * Update the payment status of the member.
-	 * 
+	 *
 	 * @param hasPaidFees, the new payment status.
 	 */
 	public void setHasPaidContributions(final boolean hasPaidFees) {

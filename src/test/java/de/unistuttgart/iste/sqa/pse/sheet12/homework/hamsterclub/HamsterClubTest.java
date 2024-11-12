@@ -5,17 +5,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 
-
 @TestInstance(Lifecycle.PER_CLASS)
-
 public final class HamsterClubTest {
 
 	private Club club;
@@ -59,16 +54,25 @@ public final class HamsterClubTest {
 	public void testApplyDiscount() {
 		final ArrayList<ClubMember> list = new ArrayList<>(club.getMembers());
 
-		final List<Double> expected = Arrays.asList(list.get(0).getContributions(), list.get(1).getContributions(),
-				list.get(2).getContributions() * 9 / 10, list.get(3).getContributions() * 9 / 10,
-				list.get(4).getContributions(), list.get(5).getContributions(),
+		final List<Double> expected = Arrays.asList(
+				list.get(0).getContributions(),
+				list.get(1).getContributions(),
+				list.get(2).getContributions() * 9 / 10,
+				list.get(3).getContributions() * 9 / 10,
+				list.get(4).getContributions(),
+				list.get(5).getContributions(),
 				list.get(6).getContributions() * 9 / 10);
 
 		club.applyDiscount();
 
-		final List<Double> actual = Arrays.asList(list.get(0).getContributions(), list.get(1).getContributions(),
-				list.get(2).getContributions(), list.get(3).getContributions(), list.get(4).getContributions(),
-				list.get(5).getContributions(), list.get(6).getContributions());
+		final List<Double> actual = Arrays.asList(
+				list.get(0).getContributions(),
+				list.get(1).getContributions(),
+				list.get(2).getContributions(),
+				list.get(3).getContributions(),
+				list.get(4).getContributions(),
+				list.get(5).getContributions(),
+				list.get(6).getContributions());
 
 		assertEquals(expected, actual);
 	}

@@ -24,7 +24,7 @@ public interface Club {
 
 	/**
 	 * Applies a discount to all members above a certain age.
-	 * 
+	 *
 	 * Calling this method multiple times will provide a stacking discount. Ensures,
 	 * that the contributions of all members above the specified age was reduced by
 	 * a specific amount.
@@ -42,11 +42,11 @@ public interface Club {
 	/**
 	 * Searches the List of members for the oldest individual, alphabetical order
 	 * acts as a tie-breaker.
-	 * 
+	 *
 	 * If two or more members share the highest age value,the member with the
 	 * alphabetically latter name is returned. E.g. if Siegbert and Tadeus share the
 	 * highest age, Tadeus will be considered the oldest member due to his name.
-	 * 
+	 *
 	 * Requires at least one member in the club, otherwise a {@link NoSuchElementException} is thrown.
 	 *
 	 * @throws NoSuchElementException if there is no (oldest) member

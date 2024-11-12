@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import de.unistuttgart.iste.sqa.pse.sheet12.presence.blackboxtests.Math;
-
 /**
  * Tests for selected Operation of class {@link Math}.
  */

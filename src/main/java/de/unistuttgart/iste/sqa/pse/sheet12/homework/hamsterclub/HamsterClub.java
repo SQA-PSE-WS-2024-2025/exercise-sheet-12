@@ -21,7 +21,7 @@ public final class HamsterClub implements Club {
 		}
 		this.members = members;
 	}
-	
+
 	@Override
 	public List<ClubMember> getMembersWithUnpaidFees() {
 		// TODO: implement (a)
