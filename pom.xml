@@ -50,12 +50,6 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>3.1.0</version>
 				<executions>
-					<execution>
-						<id>SomethingWithCalendars</id>
-						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet12.homework.cleancode.SomethingWithCalendars</mainClass>
-						</configuration>
-					</execution>
 				</executions>
 			</plugin>
 			<plugin>
