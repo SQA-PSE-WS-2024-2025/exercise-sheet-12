@@ -12,12 +12,12 @@ public final class HamsterClub implements Club {
 	/**
 	 * Create a new {@code HamsterClub}.
 	 *
-	 * @param members members of the club. Must not be null.
-	 * @throws IllegalArgumentException if members is null.
+	 * @param members members of the club. Must not be null or empty.
+	 * @throws IllegalArgumentException if members is null or empty
 	 */
 	public HamsterClub(final List<ClubMember> members) throws IllegalArgumentException {
-		if (members == null) {
-			throw new IllegalArgumentException();
+		if (members == null || members.isEmpty()) {
+			throw new IllegalArgumentException("List of ClubMembers is null or empty but must not be.");
 		}
 		this.members = members;
 	}
