@@ -8,3 +8,14 @@ The sheet has a presence and a homework part.
 * Open and run in IntelliJ
 * Open and run in VSCode
 * Run via Commandline 
+
+# Run the project via command line with Maven
+```sh
+mvn clean test -Dtest=TestHamster
+```
+```sh
+mvn clean test -Dtest=HamsterClubTest
+```
+```sh
+mvn clean test -Dtest=MathTest
+``
