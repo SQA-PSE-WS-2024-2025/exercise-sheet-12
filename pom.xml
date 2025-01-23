@@ -47,8 +47,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>3.4.1</version>
-				<executions>
-				</executions>
+				<executions></executions>
 			</plugin>
 			<plugin>
 				<groupId>com.diffplug.spotless</groupId>

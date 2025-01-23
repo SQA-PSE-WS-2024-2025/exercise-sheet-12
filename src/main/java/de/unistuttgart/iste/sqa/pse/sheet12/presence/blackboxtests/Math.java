@@ -50,8 +50,10 @@ public class Math {
 	 * @return  the absolute value of the argument.
 	 */
 	public static int abs(final int a) {
-		if (a == Integer.MIN_VALUE)
+		if (a == Integer.MIN_VALUE) {
 			throw new ArithmeticException("Overflow to represent absolute value of Integer.MIN_VALUE");
-		else return java.lang.Math.abs(a);
+		} else {
+			return java.lang.Math.abs(a);
+		}
 	}
 }
